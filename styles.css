@@ -513,6 +513,38 @@ legend,
   font-weight: 800;
 }
 
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.25rem;
+}
+
+.legal-links a {
+  display: inline-grid;
+  min-height: 2.7rem;
+  place-items: center;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid rgba(47, 128, 201, 0.24);
+  border-radius: var(--radius);
+  color: var(--teal-dark);
+  background: linear-gradient(180deg, #ffffff 0%, var(--surface-strong) 100%);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 8px 16px rgba(22, 50, 79, 0.07);
+}
+
+.settings-links {
+  margin-top: 1rem;
+}
+
+.legal-note {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .dialog-backdrop {
   position: fixed;
   inset: 0;
@@ -534,6 +566,22 @@ legend,
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: 0 28px 60px rgba(22, 50, 79, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.notice-dialog {
+  display: grid;
+  gap: 1rem;
+}
+
+.notice-list {
+  display: grid;
+  gap: 0.55rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.notice-list p {
+  margin: 0;
 }
 
 .help-copy {
